@@ -56,8 +56,8 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS('Successfully created Trainers.'))
 
     def create_collection(self):
-        collection1 = Collection(card=PokemonCard.objects.get(name="Pikachu"), trainer=Trainer.objects.get(name="Ash"), collection_date="1997-04-01")
-        collection2 = Collection(card=PokemonCard.objects.get(name="Eevee"), trainer=Trainer.objects.get(name="Gary"), collection_date="1999-06-27")
+        collection1 = Collection(card=PokemonCard.objects.get(name="Totodile"), trainer=Trainer.objects.get(name="Ronald"), collection_date="1999-09-29")
+        collection2 = Collection(card=PokemonCard.objects.get(name="Deoxys"), trainer=Trainer.objects.get(name="Cedric"), collection_date="1999-08-30")
 
         collections = [collection1, collection2]
         for collection in collections:
