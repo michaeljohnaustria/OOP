@@ -24,18 +24,18 @@ class TrainerList(ListView):
 class TrainerCreateView(CreateView):
     model = Trainer
     form_class = TrainerForm
-    template_name = 'trainer-add.html'
+    template_name = 'trainer_add.html'
     success_url = reverse_lazy('trainer-list')
 
 class TrainerUpdateView(UpdateView):
     model = Trainer
     form_class = TrainerForm
-    template_name = 'trainer-edit.html'
+    template_name = 'trainer_edit.html'
     success_url = reverse_lazy('trainer-list')
 
 class TrainerDeleteView(DeleteView):
     model = Trainer
-    template_name = 'trainer-del.html'
+    template_name = 'trainer_del.html'
     success_url = reverse_lazy('trainer-list')
 
 class PokemonCardListView(ListView):
@@ -59,18 +59,18 @@ class PokemonCardListView(ListView):
 class PokemonCardCreateView(CreateView):
     model = PokemonCard
     form_class = PokemonCardForm
-    template_name = 'pokemon-card-add.html'
+    template_name = 'pokemon-card_add.html'
     success_url = reverse_lazy('pokemon-card')
 
 class PokemonCardUpdateView(UpdateView):
     model = PokemonCard
     form_class = PokemonCardForm
-    template_name = 'pokemon-card-edit.html'
+    template_name = 'pokemon_card-edit.html'
     success_url = reverse_lazy('pokemon-card')
 
 class PokemonCardDeleteView(DeleteView):
     model = PokemonCard
-    template_name = 'pokemon-card-del.html'
+    template_name = 'pokemon-card_del.html'
     success_url = reverse_lazy('pokemon-card')
 
 class CollectionList(ListView):
@@ -82,7 +82,7 @@ class CollectionList(ListView):
 class CollectionCreateView(CreateView):
     model = Collection
     form_class = CollectionForm
-    template_name = 'collection-add.html'
+    template_name = 'collection_add.html'
     success_url = reverse_lazy('collection')
 
 class CollectionUpdateView(UpdateView):
@@ -93,5 +93,5 @@ class CollectionUpdateView(UpdateView):
 
 class CollectionDeleteView(DeleteView):
     model = Collection
-    template_name = 'collection-del.html'
+    template_name = 'collection_del.html'
     success_url = reverse_lazy('collection')
